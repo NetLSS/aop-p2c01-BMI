@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
 
             // MainActivity 에서 ResultActivity 로 넘어가기
             val intent = Intent(this, ResultActivity::class.java /*클래스 이름*/)
+            // 인텐트에 값 넣기
+            intent.putExtra("height", height)
+            intent.putExtra("weight", weight)
+
+
             startActivity(intent)
         }
     }
