@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         // R: 리소스
         setContentView(R.layout.activity_main)
 
-        val heightEditText: EditText  = findViewById(R.id.heightEditText)
+        val heightEditText: EditText = findViewById(R.id.heightEditText)
         //val weightEditText = findViewById(R.id.weightEditText) // 반환 값이 정확이 뭔지 알 수 없다
         val weightEditText = findViewById<EditText>(R.id.weightEditText) //<>에 반환 값이 뭔지 알려줌
 
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "ResultButton 이 클릭되었습니다.")
 
             // 빈 값이 들어오는 경우 예외처리
-            if (heightEditText.text.isEmpty() || weightEditText.text.isEmpty()){
+            if (heightEditText.text.isEmpty() || weightEditText.text.isEmpty()) {
                 Toast.makeText(this, "빈 값이 있습니다.", Toast.LENGTH_SHORT).show()
 
                 return@setOnClickListener // setOnClickListener 라는 함수의 return 임을 명시
@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
             // 인텐트에 값 넣기
             intent.putExtra("height", height)
             intent.putExtra("weight", weight)
-
 
             startActivity(intent)
         }
