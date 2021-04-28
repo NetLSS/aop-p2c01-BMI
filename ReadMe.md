@@ -18,9 +18,9 @@
 
 
 
-![1](./screenshot/1.jpg)
+![1](./ScreenShot/1.jpg)
 
-![2](./screenshot/2.jpg)
+![2](./ScreenShot/2.jpg)
 
 
 
